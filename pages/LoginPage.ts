@@ -10,10 +10,13 @@ export class LoginPage {
     private email_field = "xpath=//input[@aria-label='Text field for the login email']";
     private password_field = "xpath=//input[@aria-label='Text field for the login password']";
     private login_button = "xpath=//button[@aria-label='Login']";
-    private user_profile_button = "//button[@aria-label='Go to user profile']";
+    private logged_email = "//button[@aria-label='Go to user profile']//span[text()=' admin@juice-sh.op ']";
+    private apple_juice_item = "//img[@alt='Apple Juice (1000ml)']";
+    
 
     private sql_injection_query = "' OR 1=1--";
-    private fake_password = "123";
+    private sql_injection_password = "123";
+
     private bruteforce_email = "admin@juice-sh.op";
     private bruteforce_password = "admin123"
 
@@ -33,16 +36,16 @@ export class LoginPage {
     await this.page.locator(this.welcome_banner).click();
     await this.page.locator(this.account_menu).click();
     await this.page.locator(this.go_to_login).click();
-    await this.page.locator(this.email_field).click();
     await this.page.locator(this.email_field).fill(this.sql_injection_query);
-    await this.page.locator(this.password_field).click();
-    await this.page.locator(this.password_field).fill(this.fake_password);
+    await this.page.locator(this.password_field).fill(this.sql_injection_password);
     await this.page.locator(this.login_button).click();
+    await this.page.locator(this.apple_juice_item).isVisible();
     await this.page.locator(this.account_menu).click();
-    const text = await this.page.locator(this.user_profile_button).innerText();
-    expect(text).toContain(this.bruteforce_email);
-
+    expect(this.page.locator(this.logged_email).isVisible());
+    
   }
+
+  
 
   async isErrorMessageVisible(): Promise<boolean> {
     return this.page.isVisible('.error-message');

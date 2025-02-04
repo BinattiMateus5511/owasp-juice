@@ -10,9 +10,4 @@ test('SQL Injection login', async ({ page }) => {
   
 });
 
-test('Stored XSS', async ({page}) => {
 
-
-
-
-});
