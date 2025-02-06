@@ -5,7 +5,6 @@ export class ProfilePage {
     private page: Page;
 
     private user_profile_button = "//button[@aria-label='Go to user profile']";
-    private user_account_button = "//button[@aria-label='Show/hide account menu']";
 
     private url_field = "//input[@aria-label='Text field for the image link']";
     private malicious_url = "https://a.png; script-src 'unsafe-inline' 'self' 'unsafe-eval'";

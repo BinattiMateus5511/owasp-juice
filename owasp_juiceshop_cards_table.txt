@@ -1,0 +1,71 @@
+{
+  "status": "success",
+  "data": [
+    {
+      "id": 1,
+      "name": "Bjoern Kimminich",
+      "description": 4815205605542754,
+      "price": 12,
+      "deluxePrice": 2092,
+      "image": 4,
+      "createdAt": "2025-02-06 12:30:51.231 +00:00",
+      "updatedAt": "2025-02-06 12:30:51.231 +00:00",
+      "deletedAt": "PLACEHOLDER"
+    },
+    {
+      "id": 2,
+      "name": "Tim Tester",
+      "description": 1234567812345678,
+      "price": 12,
+      "deluxePrice": 2099,
+      "image": 17,
+      "createdAt": "2025-02-06 12:30:51.397 +00:00",
+      "updatedAt": "2025-02-06 12:30:51.397 +00:00",
+      "deletedAt": "PLACEHOLDER"
+    },
+    {
+      "id": 3,
+      "name": "Administrator",
+      "description": 4716190207394368,
+      "price": 2,
+      "deluxePrice": 2081,
+      "image": 1,
+      "createdAt": "2025-02-06 12:30:51.404 +00:00",
+      "updatedAt": "2025-02-06 12:30:51.404 +00:00",
+      "deletedAt": "PLACEHOLDER"
+    },
+    {
+      "id": 4,
+      "name": "Administrator",
+      "description": 4024007105648108,
+      "price": 4,
+      "deluxePrice": 2086,
+      "image": 1,
+      "createdAt": "2025-02-06 12:30:51.404 +00:00",
+      "updatedAt": "2025-02-06 12:30:51.404 +00:00",
+      "deletedAt": "PLACEHOLDER"
+    },
+    {
+      "id": 5,
+      "name": "Jim",
+      "description": 5107891722278705,
+      "price": 11,
+      "deluxePrice": 2099,
+      "image": 2,
+      "createdAt": "2025-02-06 12:30:51.412 +00:00",
+      "updatedAt": "2025-02-06 12:30:51.412 +00:00",
+      "deletedAt": "PLACEHOLDER"
+    },
+    {
+      "id": 6,
+      "name": "Bender",
+      "description": 4716943969046208,
+      "price": 2,
+      "deluxePrice": 2081,
+      "image": 3,
+      "createdAt": "2025-02-06 12:30:51.418 +00:00",
+      "updatedAt": "2025-02-06 12:30:51.418 +00:00",
+      "deletedAt": "PLACEHOLDER"
+    }
+  ]
+}
