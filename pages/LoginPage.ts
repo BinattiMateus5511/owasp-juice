@@ -3,7 +3,7 @@ import { expect, Page } from '@playwright/test';
 export class LoginPage {
     private page: Page;
 
-
+    private owasp_juice_url = "http://localhost:3000/#/";
     private welcome_banner = "xpath=//button[@aria-label='Close Welcome Banner']";
     private account_menu = "xpath=//button[@aria-label='Show/hide account menu']";
     private go_to_login = "xpath=//button[@aria-label='Go to login page']";
@@ -27,7 +27,7 @@ export class LoginPage {
 
 
   async enterOwaspJuiceWebsite(){
-    await this.page.goto('http://localhost:3000/#/');
+    await this.page.goto(this.owasp_juice_url);
   }
 
 
